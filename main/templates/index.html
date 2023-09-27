@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRDO Project</title>
+    <link href="../static/css/index.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../static/images/icon.png">
+
+    <script src="../static/js/index.js" defer></script>
+
+    
+</head>
+<body>
+ 
+    <div id="main-container">
+
+        <header>
+            <div class="logo"><img src="../static/images/icon.png" alt="Not Found!"> <p>DRDO</p></div>
+            <div class="headers">
+                <section id="home">Home</section>
+                <section id="morph" >Morphology</section>
+                <section id="transform" >Transform</section>
+                <section id="analysis" >Segmentation</section>
+            </div>
+
+            <div class="tag">Humanity, Meet <p> Precision Brain Care</p></div>
+            <input type="file" name="file" class="input-upload-image" id="file" hidden>
+            <label for="file"><div class="upload" id="header-upload"><img src="../static/images/upload_black.svg" alt="Not Found!"><p>New</p></div></label>
+        </header>
+
+        <div class="first-time" style="display:flex;"> <!--Change this none->flex -->
+            <div class="info">
+                <div class="hero-text"><span>Revolutionizing</span> Brain Tumor Detection</div>
+                <div class="content">Welcome to our cutting-edge application designed for automated brain tumor segmentation and analysis. Our program leverages the power of advanced image processing to transform the way we detect and analyze brain tumors from MRI scans.</div>
+                <div class="dev"><p>Developer</p> 
+                    Hey there, it's me, <span>Shubham Ranjan</span>! I'm a one-person army on a mission. With a background in cybersecurity, signal processing, and image processing, I'm like a Swiss Army knife in the tech world. I'm not just cracking codes; I'm cracking brains—automating brain tumor detection, that is. It's a one-person show, but trust me, I'm turning brains into byte-sized, secure data like a pro! 🧠💻🛡️</div>
+            </div>
+            <div class="first-upload">
+                <img class="upload-image" src="../static/images/Vector_B 1.png" alt="Not Found!">
+                <input type="file" class="input-upload-image" name="input-file" id="first-time-input" hidden>
+                <label for="first-time-input"><div class="upload" id="first-time-upload"><img src="../static/images/upload_black.svg" alt="Not Found!"><p>Upload</p></div></label>
+            </div>
+        </div>
+
+        <div class="main-div" style="display:none;"><!--Change this flex->none -->
+
+            <div class="image-selection-container">
+                
+                
+            </div>
+
+            <div class="main-image-container">
+                <div class="main-image-header">
+                    <div class="toggle-original" style="display:none;"><div></div>
+                    </div>
+                    <p class="image-data-type"></p>
+
+                </div>
+                <div class="image-wrap">
+                <img src="../static/images/loading_mri.gif" alt="Not Found!"></div>
+            </div>
+            <div class="few-details">
+                <div class="top-detail-images">
+                    <div class="detail-image"><img src="../static/images/loading_mri.gif" alt="Not Found!"></div>
+                    
+                </div>
+
+                <div class="param-input">
+                    <p>Parameter:</p>
+                    <div class="wrap"><input type="text" id="param" class="param" value="7" data-param-type="" placeholder="Radius">
+
+                    <div class="submit" onclick="result()">Result</div></div>
+
+                </div>
+                    
+
+
+        </div>
+
+
+
+    </div>
+    
+
+</body>
+</html>
